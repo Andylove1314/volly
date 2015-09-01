@@ -40,7 +40,8 @@ public class Volley {
      * @return A started {@link RequestQueue} instance.
      */
     public static RequestQueue newRequestQueue(Context context, HttpStack stack) {
-        File cacheDir = new File(context.getCacheDir(), DEFAULT_CACHE_DIR);
+//        File cacheDir = new File(context.getCacheDir(), DEFAULT_CACHE_DIR);
+        File cacheDir = new File("/sdcard/abc", DEFAULT_CACHE_DIR);
 
         String userAgent = "volley/0";
         try {
